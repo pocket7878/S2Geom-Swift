@@ -22,12 +22,14 @@ class Interval: CustomStringConvertible {
         self.hi = hi
     }
 
-    class func empty() -> Interval {
-        return Interval(lo: 1, hi: 0)
+    init() {
+        self.lo = 1
+        self.hi = 0
     }
 
-    class func fromPoint(p: Double) -> Interval {
-        return Interval(lo: p, hi: p)
+    init(point: Double) {
+        self.lo = point
+        self.hi = point
     }
 
     func isEmpty() -> Bool {
@@ -84,7 +86,7 @@ class Interval: CustomStringConvertible {
 
     func addPoint(p: Double) -> Interval {
         if self.isEmpty() {
-            return Interval.fromPoint(p)
+            return Interval(point: p)
         } else if(p < self.lo) {
             return Interval(lo: p, hi: self.hi)
         } else if(p > self.hi) {
