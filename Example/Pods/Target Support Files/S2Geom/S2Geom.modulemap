@@ -1,0 +1,6 @@
+framework module S2Geom {
+  umbrella header "S2Geom-umbrella.h"
+
+  export *
+  module * { export * }
+}

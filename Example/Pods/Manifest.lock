@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (3.2.0)
+  - Quick (0.9.3)
+  - S2Geom (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+  - S2Geom (from `../`)
+
+EXTERNAL SOURCES:
+  S2Geom:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
+  S2Geom: c6c128b51a9f6208f531a2d1d48a50ec13995eb7
+
+PODFILE CHECKSUM: 25cfb18b0072988070e962e4e763e9ed54b1bc09
+
+COCOAPODS: 1.0.1
